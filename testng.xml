@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="EmcTestSuite">
+    <test name="DummyTest">
+        <classes>
+            <class name="DummyDependencyResolveTest" />
+        </classes>
+    </test>
+
+    <test name="LoginTest">
+        <groups>
+            <run>
+                <include name="LoginGroup" />
+            </run>
+        </groups>
+        <classes>
+            <class name="auth.LoginTests" />
+        </classes>
+    </test>
+
+
+    <test name="EmcRegression">
+        <groups>
+            <run>
+                <include name="Regression" />
+            </run>
+        </groups>
+        <classes>
+
+        </classes>
+    </test>
+
+</suite>
